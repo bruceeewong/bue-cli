@@ -1,0 +1,12 @@
+{
+  "name": "generator-bue-cms",
+  "version": "1.0.0",
+  "description": "A handy scaffolding tool for kicking up a cms system",
+  "main": "bin/bue-cms",
+  "repository": "https://github.com/bruceeewong/generator-bue-cms",
+  "author": "bruski",
+  "license": "MIT",
+  "dependencies": {
+    "yeoman-generator": "^4.10.1"
+  }
+}
