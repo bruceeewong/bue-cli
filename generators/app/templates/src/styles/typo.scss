@@ -1,0 +1,63 @@
+// 根据 ElementUI 字体规范设计 https://element.eleme.cn/#/zh-CN/component/typography
+@import "variables.scss";
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+small {
+  margin: 0;
+}
+
+body {
+  font-family: $font-family;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+// 主标题
+h1 {
+  font-size: $--font-size-extra-large;
+  line-height: 1.7;
+  font-weight: $font-weight-medium;
+  color: $--color-text-primary;
+}
+
+h2 {
+  font-size: $--font-size-large;
+  line-height: $font-line-height-large;
+  font-weight: $font-weight-medium;
+  color: $--color-text-primary;
+}
+
+h3 {
+  font-size: $--font-size-medium;
+  line-height: $font-line-height-large;
+  font-weight: $font-weight-medium;
+  color: $--color-text-primary;
+}
+
+h4, h5, h6 {
+  font-size: $--font-size-medium;
+  line-height: $font-line-height-medium;
+  font-weight: $font-weight-medium;
+  color: $--color-text-secondary;
+}
+
+p {
+  font-size: $--font-size-base;
+  line-height: $font-line-height-medium;
+  font-weight: $font-weight-regular;
+  color: $--color-text-regular;
+}
+
+small {
+  font-size: $--font-size-small;
+  line-height: $font-line-height-small;
+  font-weight: $font-weight-regular;
+  color: $--color-text-secondary;
+}

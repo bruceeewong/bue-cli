@@ -8,6 +8,16 @@ module.exports = class extends Generator {
         name: 'name',
         message: 'project name',
         default: this.appname,
+      },
+      {
+        type: 'input',
+        name: 'author',
+        message: 'author name',
+      },
+      {
+        type: 'input',
+        name: 'email',
+        message: 'your email',
       }
     ]).then(answers => {
       this.answers = answers
@@ -38,36 +48,5 @@ module.exports = class extends Generator {
         this.destinationPath(item)
       )
     })
-    // const templates = [
-    //   'build/index.js',
-
-    //   'mock/modules/demo.js',
-    //   'mock/modules/mockData.js',
-    //   'mock/index.js',
-    //   'mock/mock-server.js',
-
-    //   'public/favicon.ico',
-    //   'public/index.html',
-
-    //   'src/api/base.js',
-    //   'src/api/request.js',
-
-    //   'src/assets/404_images/404_cloud.png',
-    //   'src/assets/404_images/404.png',
-    //   'src/assets/logo.png',
-
-    //   'src/components/common/Breadcrum/index.vue',
-    //   'src/components/common/ErrorLog/index.vue',
-    //   'src/components/common/Hamburger/index.vue',
-    //   'src/components/common/IconTip/index.vue',
-    //   'src/components/common/SvgIcon/index.vue',
-    //   'src/components/custom',
-
-    //   'src/components/exceptions/error-handler.js',
-    //   'src/components/exceptions/base-exception.js',
-    //   'src/components/exceptions/network-exception.js',
-    //   'src/components/exceptions/request-exception.js',
-    //   'src/components/exceptions/validation-exception.js',
-    // ]
   }
 }

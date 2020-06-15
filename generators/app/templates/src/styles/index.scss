@@ -1,0 +1,55 @@
+@import './variables.scss';
+@import './mixins/_common.scss';
+@import './transition.scss';
+@import './cover-element-ui.scss';
+@import './sidebar.scss';
+@import './typo.scss';
+
+#nprogress .bar {
+  background-color: $--color-warning;
+}
+
+label {
+  font-weight: 700;
+}
+body {
+  height: 100%;
+}
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+a,
+a:focus,
+a:hover {
+  cursor: pointer;
+  color: inherit;
+  text-decoration: none;
+}
+
+div:focus {
+  outline: none;
+}
+
+.clearfix {
+  &:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+  }
+}

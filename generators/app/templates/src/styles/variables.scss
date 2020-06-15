@@ -1,0 +1,51 @@
+@import "./element-variables.scss";
+
+/* Global
+-------------------------- */
+$body-min-width: 1280px;
+$body-max-width: 1920px;
+
+/* Font
+-------------------------- */
+$font-family : -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
+'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
+'Noto Color Emoji';
+
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+$font-line-height-large: 1.7;
+$font-line-height-medium: 1.5;
+$font-line-height-small: 1.3;
+
+/* Spacing
+-------------------------- */
+$space-large: 24px;
+$space-medium: 16px;
+$space-small: 8px;
+
+// om-admin-template sidebar
+$menuText: #ddd;
+$menuActiveText: $--color-success;
+$subMenuActiveText: $--color-success;
+
+$menuBg: #545C64;
+$menuHover: mix($menuBg, #000, 80%);
+
+$subMenuBg: mix($menuBg, #fff, 90%);
+$subMenuHover: mix($subMenuBg, #000, 80%);
+
+$sideBarWidth: 208px;
+$navbarHeight: 50px;
+
+:export {
+  menuText: $menuText;
+  menuActiveText: $menuActiveText;
+  subMenuActiveText: $subMenuActiveText;
+  menuBg: $menuBg;
+  menuHover: $menuHover;
+  subMenuBg: $subMenuBg;
+  subMenuHover: $subMenuHover;
+  sideBarWidth: $sideBarWidth;
+  navbarHeight: $navbarHeight;
+}
